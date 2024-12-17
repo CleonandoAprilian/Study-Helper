@@ -25,9 +25,15 @@ header {
 }
 
 nav {
+  width: 100%;
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -38,7 +44,7 @@ h1 {
 
 #spotify-link {
   color: white;
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-decoration: none;
 }
 
@@ -47,6 +53,7 @@ main {
   flex: 1;
   padding: 2rem;
   gap: 2rem;
+  margin-top: 50px;
 }
 
 #pomodoro,
@@ -164,7 +171,7 @@ input[type="number"] {
 }
 
 #spotify {
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--primary-color);
   color: white;
 }
