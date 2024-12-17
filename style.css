@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #4a4e69;
+  --secondary-color: #9a8c98;
+  --accent-color: #c9ada7;
+  --background-color: #f2e9e4;
+  --text-color: #22223b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#spotify-link {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#pomodoro,
+#todo {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#pomodoro {
+  flex: 2;
+}
+
+#todo {
+  flex: 1;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+#timer {
+  font-size: 4rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+#settings {
+  margin-top: 2rem;
+}
+
+.setting {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#totalStudyTime {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+#todoList li:hover {
+  transform: translateY(-2px);
+}
+
+#todoForm {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#spotify {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#spotifyEmbed {
+  width: 100%;
+  height: 380px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-actions button {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #pomodoro,
+  #todo {
+    flex: 1;
+  }
+}
