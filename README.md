@@ -30,6 +30,11 @@ Ayo Sinau adalah aplikasi web yang dirancang untuk membantu pelajar dan mahasisw
 
 ## Cara Kerja Ayo Sinau!!!
 
+### Mengakses Ayo Sinau!!
+1. buka browser favorit anda
+2. masukkan link berikut https://cleonandoaprilian.github.io/Study-Helper/
+3. Ayo Sinau!!! siap Membantu Kegiatan Belajar Anda 
+
 ### Pomodoro Timer
  1. **Setel Durasi Waktu Belajar, Istirahat serta jumlah sesinya**: secara default waktu belajar adalah 25 menit, waktu istirahat adalah 5 menit dan jumlah sesi 4.
  2. **Mulai Timer**: klik tombol mulai untuk memulai timer.
