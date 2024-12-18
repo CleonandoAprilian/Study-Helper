@@ -23,13 +23,14 @@ Ayo Sinau adalah aplikasi web yang dirancang untuk membantu pelajar dan mahasisw
 - Local Storage untuk penyimpanan data
 - Spotify Embedded Player
 
-## Instalasi dan Menjalankan Proyek
-1.Clone repositori ini ke komputer Anda
-2.Buka file index.html di browser favorit Anda
+## Instalasi
 
-## Cara Kerja Ayo SInau!!!
+1. Clone repositori ini ke komputer Anda
+2. Buka file index.html di browser favorit Anda
 
- ### Pomodoro Timer
+## Cara Kerja Ayo Sinau!!!
+
+### Pomodoro Timer
  1. **Setel Durasi Waktu Belajar, Istirahat serta jumlah sesinya**: secara default waktu belajar adalah 25 menit, waktu istirahat adalah 5 menit dan jumlah sesi 4.
  2. **Mulai Timer**: klik tombol mulai untuk memulai timer.
  3. **Jeda Timer**: klik tombol jeda untuk menghentikan timer.
@@ -45,5 +46,10 @@ Ayo Sinau adalah aplikasi web yang dirancang untuk membantu pelajar dan mahasisw
 
 ### Spotify Player
 1. **Masukkan URL**: Masukkan URL Playlist Spotify anda pada kolom input yang disediakan lalu klik tombol update untuk memutar dan menyimpan playlist anda agar tidak hilang saat direfresh(url default https://open.spotify.com/playlist/4Ohjpnpy1ojsGLYNe3glVJ).
+
+Terimakasih telah menggunakan **Ayo Sinau!!!** 😃.
+
+Semoga **Ayo Sinau!!** dapat Membantu Kegiatan Belajar Anda
+
    
     
