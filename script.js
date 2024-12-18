@@ -169,7 +169,7 @@ const playlistUrlInput = document.getElementById("playlistUrl");
 const updatePlaylistButton = document.getElementById("updatePlaylist");
 
 function loadSpotifyPlaylist() {
-  const playlistUrl = localStorage.getItem("spotifyPlaylistUrl") || "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M";
+  const playlistUrl = localStorage.getItem("spotifyPlaylistUrl") || "https://open.spotify.com/playlist/4Ohjpnpy1ojsGLYNe3glVJ";
   updateSpotifyEmbed(playlistUrl);
   playlistUrlInput.value = playlistUrl;
 }
