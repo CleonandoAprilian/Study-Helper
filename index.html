@@ -17,7 +17,7 @@
     </header>
     <main>
       <section id="pomodoro">
-        <h2>Atur Jam Belajar Sesukamu!! jangan lupa selingi dengan Istirahat</h2>
+        <h2>Atur Jam Belajar Sesukamu!! jangan lupa selipkan waktu untuk Istirahat</h2>
         <div id="timer">25:00</div>
         <div id="controls">
           <button id="start">Mulai</button>
@@ -50,7 +50,14 @@
       </aside>
     </main>
     <section id="spotify">
-      <h2>Spotify Player</h2>
+      <div id="textspotify">
+        <h1>Spotify Player</h1>
+        <p>Masukkan URL playlist spotifymu contoh https://open.spotify.com/playlist/7xIyQwHNIQ5kudoLiK6HBB</p>
+      </div>
+      <div id="spotifyControls">
+        <input type="text" id="playlistUrl" placeholder="Masukkan URL playlist Spotify" />
+        <button id="updatePlaylist"><i class="fas fa-sync-alt"></i> Update</button>
+      </div>
       <div id="spotifyEmbed"></div>
     </section>
     <script src="script.js"></script>
