@@ -165,10 +165,18 @@ todoForm.addEventListener("submit", (e) => {
 
 // Spotify Embedded Player
 const spotifyEmbed = document.getElementById("spotifyEmbed");
+const playlistUrlInput = document.getElementById("playlistUrl");
+const updatePlaylistButton = document.getElementById("updatePlaylist");
 
-// Replace 'YOUR_PLAYLIST_ID' with an actual Spotify playlist ID
-const playlistId = "4Ohjpnpy1ojsGLYNe3glVJ";
-spotifyEmbed.innerHTML = `
+function loadSpotifyPlaylist() {
+  const playlistUrl = localStorage.getItem("spotifyPlaylistUrl") || "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M";
+  updateSpotifyEmbed(playlistUrl);
+  playlistUrlInput.value = playlistUrl;
+}
+
+function updateSpotifyEmbed(url) {
+  const playlistId = extractPlaylistId(url);
+  spotifyEmbed.innerHTML = `
     <iframe src="https://open.spotify.com/embed/playlist/${playlistId}" 
             width="100%" 
             height="380" 
@@ -177,6 +185,20 @@ spotifyEmbed.innerHTML = `
             allow="encrypted-media">
     </iframe>
 `;
+}
+
+function extractPlaylistId(url) {
+  const match = url.match(/playlist\/([a-zA-Z0-9]+)/);
+  return match ? match[1] : "";
+}
+
+updatePlaylistButton.addEventListener("click", () => {
+  const newUrl = playlistUrlInput.value.trim();
+  if (newUrl) {
+    localStorage.setItem("spotifyPlaylistUrl", newUrl);
+    updateSpotifyEmbed(newUrl);
+  }
+});
 
 // Smooth scroll to Spotify section when clicking the Spotify icon
 document.getElementById("spotify-link").addEventListener("click", function (e) {
@@ -191,6 +213,7 @@ window.addEventListener("load", () => {
   checkAndResetDaily();
   loadTotalStudyTime();
   loadTodos();
+  loadSpotifyPlaylist();
 });
 
 // Check and reset at midnight
@@ -199,10 +222,10 @@ function scheduleMiddnightReset() {
   const night = new Date(
     now.getFullYear(),
     now.getMonth(),
-    now.getDate() + 1, // the next day
+    now.getDate() + 1, 
     0,
     0,
-    0 // at 00:00:00 hours
+    0 
   );
   const msToMidnight = night.getTime() - now.getTime();
 
