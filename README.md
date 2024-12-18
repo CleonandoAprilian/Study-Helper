@@ -22,3 +22,6 @@ Ayo Sinau adalah aplikasi web yang dirancang untuk membantu pelajar dan mahasisw
 - JavaScript (ES6+)
 - Local Storage untuk penyimpanan data
 - Spotify Embedded Player
+
+## Instalasi dan Menjalankan Proyek
+-Clone repositori ini ke komputer Anda-
