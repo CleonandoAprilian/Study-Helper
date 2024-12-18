@@ -17,13 +17,6 @@ body {
   color: var(--text-color);
 }
 
-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 nav {
   width: 100%;
   background-color: var(--primary-color);
@@ -36,10 +29,12 @@ nav {
   padding: 1rem;
 }
 
-h1 {
+#podomoro-link {
   margin: 0;
+  color: white;
   font-size: 2rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 #spotify-link {
@@ -174,6 +169,34 @@ input[type="number"] {
   padding: 1rem;
   background-color: var(--primary-color);
   color: white;
+}
+
+#spotifyControls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+#playlistUrl {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#updatePlaylist {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#updatePlaylist:hover {
+  background-color: var(--primary-color);
 }
 
 #spotifyEmbed {
